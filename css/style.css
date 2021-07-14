@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none
+}
+
+.wrap {
+    width: 1920px;
+}
+
+header {
+    background-image: url(../images/vision.png);
+    width: 1920px;
+    height: 940px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    color: white;
+
+    /* float: left;
+    text-align: center; */
+}
+
+header nav {
+    color: white;
+    font-size: 28px;
+    display: inline;
+    font-family: 'Fredoka One', 'cursive';
+}
+
+header ul li {
+    float: right;
+    margin-right: 50px;
+    font-size: 20pt;
+    margin-top: 100px;
+}
+
+header img {
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+section {
+    width: 1920px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.active {
+    background-image: url(../images/benefit_all.png);
+    height: 940px;
+}
+
+.teacher {
+    background-image: url(../images/teachers3.png);
+    height: 940px;
+    position: relative;
+}
+
+.slide {
+    position: relative;
+}
+
+.slide div img {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.teacher .slide img {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 500px;
+}
+
+.teacher .slide img.active {
+    left: 0;
+    opacity: 1;
+}
+
+.arr_left {
+    float: left;
+    margin-left: 100px;
+    margin-top: 450px;
+}
+
+.arr_right {
+    float: right;
+    margin-right: 100px;
+    margin-top: 450px;
+}
+
+
+.class {
+    background-image: url(../images/class.png);
+    height: 940px;
+}
+
+.review {
+    background-image: url(../images/reviews2.png);
+    height: 940px;
+}
+
+.review .video {
+    margin-left: 400px;
+    padding-top: 200px;
+}
+
+.level {
+    background-image: url(../images/test.png);
+    height: 940px;
+}
+
+.level img {
+    margin-left: 650px;
+    margin-top: 600px;
+}
+
+footer {
+    background-color: rgb(59, 57, 57);
+    width: 1920px;
+    height: 400px;
+    font-size: 18pt;
+    text-align: center;
+}
+
+footer .info {
+    padding-top: 110px;
+    color: rgb(214, 210, 210);
+    font-family: 'Fredoka One', 'cursive';
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2-1.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/bcslidecustom.css">
+    <title>YC college</title>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <a href="#"><img class="logo" src="images/yc logo3.png" alt="logo"></a>
+
+            <ul class="nav">
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Benefit</a></li>
+                <li><a href="#">Teacher</a></li>
+                <li><a href="#">Class</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Level Test</a></li>
+            </ul>
+        </header>
+    </div>
+
+
+    <div class="section">
+        <div class="active">
+        </div>
+    </div>
+
+    <div class="teacher">
+        <div class="slide">
+            <div><img class="devin" src="images/devin3.png" alt="button"></div>
+            <div><img class="devin" src="images/roberto3.png" alt="button"></div>
+            <div><img class="devin" src="images/sono3.png" alt="button"></div>
+            <div><img class="devin" src="images/tamara3.png" alt="button"></div>
+            <div><img class="devin" src="images/jareb3.png" alt="button"></div>
+        </div>
+        <!-- <div class="arr">
+                <a href="#"><img class="arr_left" src="images/left.png" alt="button"></a>
+                <a href="#"><img class="arr_right" src="images/right.png" alt="button"></a>
+            </div> -->
+
+    </div>
+
+    <div class="class">
+    </div>
+
+    <div class="review">
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KE4AXlqTesY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2qhJ1rvd5Lc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fv3es6oSl48"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3nI39SaxS7c"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <div class="level">
+        <a href="#"><img src="images/simple.png" alt="button"></a>
+    </div>
+    </section>
+
+    <footer>
+        <div class="info">당신의 마지막 영어학원 YC college<br>
+            상호명 | YC college 어학원<br>
+            대연 캠퍼스 | 부산시 남구 수영로 323 태강프라자 9층 / 전화 | 051 611 1511<br>
+            서면 캠퍼스 | 부산시 진구 서전로 위워크 7층(방문 전 예약 필수) / 전화 | 051 928 1511<br>
+            메일 | yccollege@yccollege.education<br>
+            사업자등록번호 | 617-92-57816 대표자 | 김수경</div>
+    </footer>
+
+    <div id="topButton" style="cursor: pointer">
+        <img src="./images/topbutton.png" id="topButtonImg">
+    </div>
+
+
+    <!-- ----------------------------------------------- -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        var navi = $('header ul li ')
+
+        navi.click(function () {
+            var target = $(this)
+            var index = target.index();
+            $('html,body').animate({
+                scrollTop: $('body>div').eq(index).offset().top
+            }, 500)
+        })
+
+        $(document).ready(function () {
+            $('.slide').bxSlider();
+        });
+    </script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script>
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+                // top button controll
+                if ($(this).scrollTop() > 500) {
+                    $('#topButton').fadeIn();
+                } else {
+                    $('#topButton').fadeOut();
+                }
+            });
+
+            $("#topButtonImg").click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, '300');
+            });
+
+        });
+    </script>
+    
+</body>
+
+
+</html>

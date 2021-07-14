@@ -1,0 +1,8 @@
+.teacher .bx-wrapper{
+    background: none ;
+    border:none;
+    padding-top:50px;
+    box-shadow: none;
+}
+
+.bx-wrapper .bx-pager {display: none;}
